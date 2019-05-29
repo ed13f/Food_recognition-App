@@ -1,4 +1,4 @@
-(function() {
+// (function() {
   // The width and height of the captured photo. We will set the
   // width to the value defined here, but the height will be
   // calculated based on the aspect ratio of the input stream.
@@ -96,7 +96,7 @@
   // Set up our event listener to run the startup process
   // once loading is complete.
   window.addEventListener('load', startup, false);
-})();
+// })();
 
 
 // ----------------- Rico -----------------------
