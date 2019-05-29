@@ -115,4 +115,4 @@ $( document ).ready(function() {
         $("#video").show();
         $(this).show();
     })
-}
+})
