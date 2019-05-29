@@ -100,10 +100,19 @@
 
 
 // ----------------- Rico -----------------------
-$("#retakebutton").on("click", function(){
-    console.log("click");
-    clearphoto();
-    $("#startbutton").show();
-    $("#video").hide();
-    $(this).show();
-})
+$( document ).ready(function() {
+    $("#retakebutton").on("click", function(){
+        console.log("retake click");
+        clearphoto();
+        $("#startbutton").show();
+        $("#video").hide();
+        $(this).show();
+    })
+    $("#startbutton").on("click", function(){
+        console.log("start click");
+        // clearphoto();
+        $("#startbutton").hide();
+        $("#video").show();
+        $(this).show();
+    })
+}
