@@ -89,6 +89,8 @@
       var data = canvas.toDataURL('image/png');
       alert(data);
       console.log(data);
+      var res = data.replace("data:image/png;base64,", "");
+      console.log(res);
       // --- api ---
       // const Clarifai = require('clarifai');
       
