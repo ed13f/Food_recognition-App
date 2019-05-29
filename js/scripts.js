@@ -88,6 +88,7 @@
     
       var data = canvas.toDataURL('image/png');
       alert(data);
+      console.log(data);
       // --- api ---
       // const Clarifai = require('clarifai');
       
