@@ -87,16 +87,13 @@
       context.drawImage(video, 0, 0, width, height);
     
       var data = canvas.toDataURL('image/png');
-      // alert(data);
-      // console.log(data);
       var base64String = data.replace("data:image/png;base64,", "");
       console.log(base64String);
       // --- api ---
-      // const Clarifai = require('clarifai');
       
       // Instantiate a new Clarifai app by passing in your API key.
       const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
-      app.models.predict(Clarifai.GENERAL_MODEL, {base64: base64String})
+      app.models.predict(Clarifai.FOOD, {base64: base64String})
         .then(response => {
           console.log(response);
         })
