@@ -106,13 +106,13 @@ $(document).ready(function() {
         clearphoto();
         $("#startbutton").show();
         $("#video").hide();
-        $(this).show();
+        $(this).hide();
     })
     $("#startbutton").on("click", function(){
         console.log("start click");
         // clearphoto();
         $("#startbutton").hide();
         $("#video").show();
-        $(this).show();
+        $(this).hide();
     })
 })
