@@ -87,7 +87,18 @@
       context.drawImage(video, 0, 0, width, height);
     
       var data = canvas.toDataURL('image/png');
-      console.log(data);
+
+      // --- api ---
+      app.models.predict(Clarifai.GENERAL_MODEL, data)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+        // --- api ---
+
+      // console.log(data);
       photo.setAttribute('src', data);
     } else {
       clearphoto();
@@ -119,3 +130,18 @@ $(document).ready(function() {
         $("#retakebutton").show();
     })
 })
+// ------------------ API Call -----------------
+
+const Clarifai = require('clarifai');
+      
+      // Instantiate a new Clarifai app by passing in your API key.
+      const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
+      
+      // Predict the contents of an image by passing in a URL.
+      // app.models.predict(Clarifai.GENERAL_MODEL, 'https://samples.clarifai.com/metro-north.jpg')
+      //   .then(response => {
+      //     console.log(response);
+      //   })
+      //   .catch(err => {
+      //     console.log(err);
+      //   });
