@@ -9,7 +9,7 @@
   // |streaming| indicates whether or not we're currently streaming
   // video from the camera. Obviously, we start at false.
 
-  var streaming = true;
+  var streaming = false;
 
   // The various HTML elements we need to configure or control. These
   // will be set by the startup() function.
