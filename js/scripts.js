@@ -93,7 +93,7 @@
       
       // Instantiate a new Clarifai app by passing in your API key.
       const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
-      app.models.predict(Clarifai.GENERAL_MODEL, data)
+      app.models.predict(Clarifai.GENERAL_MODEL, {base64: data})
         .then(response => {
           console.log(response);
         })
