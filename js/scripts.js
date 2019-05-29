@@ -89,6 +89,10 @@
       var data = canvas.toDataURL('image/png');
 
       // --- api ---
+      const Clarifai = require('clarifai');
+      
+      // Instantiate a new Clarifai app by passing in your API key.
+      const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
       app.models.predict(Clarifai.GENERAL_MODEL, data)
         .then(response => {
           console.log(response);
