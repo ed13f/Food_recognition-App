@@ -97,3 +97,13 @@
   // once loading is complete.
   window.addEventListener('load', startup, false);
 })();
+
+
+// ----------------- Rico -----------------------
+$("#retakebutton").on("click", function(){
+    console.log("click");
+    clearphoto();
+    $("#startbutton").show();
+    $("#video").hide();
+    $(this).show();
+})
