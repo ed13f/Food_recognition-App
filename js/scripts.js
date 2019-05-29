@@ -121,7 +121,7 @@
 $(document).ready(function() {
     const Clarifai = require(['clarifai']);
     $("#retakebutton").on("click", function(){
-        console.log("retake click 5");
+        console.log("retake click 6");
         clearphoto();
         $("#startbutton").show();
         $("#video").show();
@@ -129,7 +129,7 @@ $(document).ready(function() {
         $("#retakebutton").hide();
     })
     $("#startbutton").on("click", function(){
-        console.log("start click 5");
+        console.log("start click 6");
         // clearphoto();
         $("#startbutton").hide();
         $("#video").hide();
