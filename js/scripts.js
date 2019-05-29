@@ -92,7 +92,7 @@
       // const Clarifai = require('clarifai');
       
       // Instantiate a new Clarifai app by passing in your API key.
-      // const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
+      const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
       app.models.predict(Clarifai.GENERAL_MODEL, data)
         .then(response => {
           console.log(response);
@@ -117,8 +117,7 @@
 
 // ----------------- Rico -----------------------
 $(document).ready(function() {
-    const Clarifai = require('clarifai');
-    const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
+    const Clarifai = require(['clarifai']);
     $("#retakebutton").on("click", function(){
         console.log("retake click 4");
         clearphoto();
