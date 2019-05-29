@@ -136,10 +136,10 @@ $(document).ready(function() {
 })
 // ------------------ API Call -----------------
 
-const Clarifai = require('clarifai');
+// const Clarifai = require('clarifai');
       
       // Instantiate a new Clarifai app by passing in your API key.
-      const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
+      // const app = new Clarifai.App({apiKey: '309ba91be550479498305b3c15a51575'});
       
       // Predict the contents of an image by passing in a URL.
       // app.models.predict(Clarifai.GENERAL_MODEL, 'https://samples.clarifai.com/metro-north.jpg')
