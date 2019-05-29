@@ -100,7 +100,7 @@
 
 
 // ----------------- Rico -----------------------
-$( document ).ready(function() {
+$(document).ready(function() {
     $("#retakebutton").on("click", function(){
         console.log("retake click");
         clearphoto();
